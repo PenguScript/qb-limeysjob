@@ -169,7 +169,7 @@ QBShared.Items = {
 --qb-limeysjob
 	
 	--drinks
-    ['limeysdonut2'] 				 	 = {['name'] = 'limeysdonut2', 			  	  	['label'] = 'Chocolate Donut', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'limeysdonut2.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Strawberry Donut!'},
+    ['limeysdonut'] 				 	 = {['name'] = 'limeysdonut', 			  	  	['label'] = 'Strawberry Donut', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'limeysdonut2.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Strawberry Donut!'},
     ['limeysdonut2'] 				 	 = {['name'] = 'limeysdonut2', 			  	  	['label'] = 'Chocolate Donut', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'limeysdonut2.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Chocolate Donut!'},
     ['limeysgum'] 				 	 = {['name'] = 'limeysgum', 			  	  	['label'] = 'Trident Gum', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'limeysgum.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Chewy! Minty! Fresh!'},
     ['limeyschocolate'] 				 	 = {['name'] = 'limeyschocolate', 			  	  	['label'] = 'Nestle Extrafino Chocolate', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'limeyschocolate.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Mmmmmm Chocolate!'},
