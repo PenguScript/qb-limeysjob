@@ -108,7 +108,7 @@ end)
 
 RegisterNetEvent("qb-limeysjob:Fridge")
 AddEventHandler("qb-limeysjob:Fridge", function()
-    TriggerEvent("inventory:client:SetCurrentStash", "winefridge")
+    TriggerEvent("inventory:client:SetCurrentStash", "fridge")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "fridge", {
         maxweight = 250000,
         slots = 40,
