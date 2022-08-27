@@ -19,7 +19,7 @@ function DrawText3Ds(x, y, z, text)
 end
 
 Citizen.CreateThread(function()
-    Limeys = AddBlipForCoord(290.06, -961.77, 29.42)
+    Limeys = AddBlipForCoord(249.1, -1027.36, 28.28)
     SetBlipSprite (Limeys, 93)
     SetBlipDisplay(Limeys, 4)
     SetBlipScale  (Limeys, 0.7)
