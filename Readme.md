@@ -138,12 +138,12 @@ end)
 Consumeables = {
 
 --donuts
-	["limeysdonut"] = math.random(10, 25)
-    ["limeysdonut2"] = math.random(10, 25)
+	["limeysdonut"] = math.random(10, 25),
+    ["limeysdonut2"] = math.random(10, 25),
 --candies
-	["limeysgum"] = math.random(10, 25)
-    ["limeyschocolate"] = math.random(10, 25)
-    ["limeyschocolate2"] = math.random(10, 25)
+	["limeysgum"] = math.random(10, 25),
+    ["limeyschocolate"] = math.random(10, 25),
+    ["limeyschocolate2"] = math.random(10, 25),
 
 --drink
     ["cherrydrink"] = math.random(55, 80),
@@ -207,23 +207,23 @@ QBShared.Items = {
 ```
 QBShared.Jobs = {
     ["limeys"] = {
-		label = "Limey\'s Juice Shop",
+		label = "Limey's Juice Shop",
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = "Trainee",
+                name = 'Trainee"',
                 payment = 75 --edit depending on your economy
             },
 			['1'] = {
-                name = "Worker",
+                name = 'Worker',
                 payment = 100 --edit depending on your economy
             },
             ['3'] = {
-                name = "manager",
+                name = 'Manager',
                 payment = 150 --edit depending on your economy
             },
 			['4'] = {
-                name = "Owner",
+                name = 'Owner',
                 isboss = true,
                 payment = 200 --edit depending on your economy
             },
