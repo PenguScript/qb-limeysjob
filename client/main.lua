@@ -132,7 +132,7 @@ AddEventHandler("qb-limeysjob:CherryCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglassglass", 1)
+					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
 					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
                     TriggerServerEvent('QBCore:Server:RemoveItem', "cherry", 1)
 					TriggerServerEvent('QBCore:Server:AddItem', "cherrycocktail", 1)
