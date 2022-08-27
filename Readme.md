@@ -211,7 +211,7 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Trainee"',
+                name = 'Trainee'',
                 payment = 75 --edit depending on your economy
             },
 			['1'] = {
