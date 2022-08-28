@@ -1,5 +1,5 @@
 print "qb-limeysjob made by PenguScripts using the Limeys MLO"
-print "version 1.0"
+print "version 1.1"
 
 local QBCore = exports['qb-core']:GetCoreObject()
 
