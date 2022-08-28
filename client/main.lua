@@ -132,14 +132,11 @@ AddEventHandler("qb-limeysjob:CherryCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
-					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "cherry", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "cherrycocktail", 1)
+					TriggerServerEvent('qb-limeysjob:server:CherryCocktail')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cocktailglass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherrycocktail"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherrycocktail"], "add")
                     			QBCore.Functions.Notify("You made a Cherry Cocktail", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -167,14 +164,11 @@ AddEventHandler("qb-limeysjob:AppleCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
-					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "apple", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "applecocktail", 1)
+					TriggerServerEvent('qb-limeysjob:server:AppleCocktail')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cocktailglass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["apple"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["applecocktail"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["apple"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["applecocktail"], "add")
                     			QBCore.Functions.Notify("You made an Apple Cocktail", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -202,14 +196,11 @@ AddEventHandler("qb-limeysjob:BananaCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
-					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "banana", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "bananacocktail", 1)
+					TriggerServerEvent('qb-limeysjob:server:BananaCocktail')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cocktailglass"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["banana"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["bananacocktail"], "add")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["banana"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["bananacocktail"], "add")
                     			QBCore.Functions.Notify("You made a Banana Cocktail", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -237,14 +228,11 @@ AddEventHandler("qb-limeysjob:KiwiCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "kiwi", 1)
-					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "kiwicocktail", 1)
+					TriggerServerEvent('qb-limeysjob:server:KiwiCocktail')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cocktailglass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwi"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwicocktail"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwi"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwicocktail"], "add")
                     			QBCore.Functions.Notify("You made a Kiwi Cocktail", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -272,28 +260,18 @@ AddEventHandler("qb-limeysjob:ParadiseCocktail", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "cocktailglass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "apple", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "cherry", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "kiwi", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "banana", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "watermelon", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "orange", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "lemon", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "lime", 1)
-					TriggerServerEvent('QBCore:Server:RemoveItem', "whiskey", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "paradisecocktail", 1)
+					TriggerServerEvent('qb-limeysjob:server:ParadiseCocktail')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cocktailglass"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["apple"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwi"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["banana"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelon"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orange"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemon"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lime"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["paradisecocktail"], "add")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["apple"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["kiwi"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["banana"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelon"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orange"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemon"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lime"], "remove")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["whiskey"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["paradisecocktail"], "add")
                     			QBCore.Functions.Notify("You made a Paradise Cocktail", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -321,12 +299,10 @@ AddEventHandler("qb-limeysjob:CherryDrink", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "drink-glass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "cherry", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "cherrydrink", 1)
+					TriggerServerEvent('qb-limeysjob:server:CherryDrink')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["drink-glass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherrydrink"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherry"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["cherrydrink"], "add")
                     			QBCore.Functions.Notify("You made a Cherry Drink", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -354,12 +330,10 @@ AddEventHandler("qb-limeysjob:LemonDrink", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "drink-glass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "lemon", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "lemondrink", 1)
+					TriggerServerEvent('qb-limeysjob:server:LemonDrink')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["drink-glass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemon"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemondrink"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemon"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lemondrink"], "add")
                     			QBCore.Functions.Notify("You made Rip-off Lemonade", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -387,12 +361,10 @@ AddEventHandler("qb-limeysjob:LimeDrink", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "drink-glass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "lime", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "limedrink", 1)
+					TriggerServerEvent('qb-limeysjob:server:LimeDrink')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["drink-glass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lime"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["limedrink"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["lime"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["limedrink"], "add")
                     			QBCore.Functions.Notify("You made a Lime Drink", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -420,12 +392,10 @@ AddEventHandler("qb-limeysjob:OrangeDrink", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "drink-glass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "orange", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "orangedrink", 1)
+					TriggerServerEvent('qb-limeysjob:server:OrangeDrink')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["drink-glass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orange"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orangedrink"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orange"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["orangedrink"], "add")
                     			QBCore.Functions.Notify("You made a Orange Drink", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -453,12 +423,10 @@ AddEventHandler("qb-limeysjob:WatermelonDrink", function()
 					anim = "givetake1_a",
 					flags = 8,
 				}, {}, {}, function() -- Done
-					TriggerServerEvent('QBCore:Server:RemoveItem', "drink-glass", 1)
-                    TriggerServerEvent('QBCore:Server:RemoveItem', "watermelon", 1)
-					TriggerServerEvent('QBCore:Server:AddItem', "watermelondrink", 1)
+					TriggerServerEvent('qb-limeysjob:server:WatermelonDrink')
                     			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["drink-glass"], "remove")
-                                TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelon"], "remove")
-								TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelondrink"], "add")
+                                	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelonslice"], "remove")
+					TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["watermelondrink"], "add")
                     			QBCore.Functions.Notify("You made a Watermelon Drink", "success")
 				end, function()
 					QBCore.Functions.Notify("Cancelled..", "error")
@@ -478,7 +446,20 @@ end)
 
 
 
-
+RegisterNetEvent('qb-limeysjob:WatermelonSlice', function()
+    QBCore.Functions.Progressbar('watermelonslice', 'Slicing Watermelon...', false, true, {
+        disableMovement = true,
+	disableCarMovement = true,
+	disableMouse = false,
+	disableCombat = true,
+    }, {
+	animDict = 'anim@gangops@facility@servers@',
+	anim = 'idle',
+	flags = 16,
+    })
+    QBCore.Functions.Notify('You sliced the watermelon', 'success')
+    ClearPedTasks(PlayerPedId())
+end)
 
 
 
