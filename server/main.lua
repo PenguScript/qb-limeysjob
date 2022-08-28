@@ -166,3 +166,13 @@ QBCore.Functions.CreateCallback('qb-limeysjob:server:get:ingredientparadisecockt
         cb(false)
     end
 end)
+
+-- ITEM ADD/REMOVE FUNCTIONS
+
+RegisterNetEvent('qb-limeysjob:server:CherryCocktail', function()
+    local src = source
+    local plr = QBCore.Functions.GetPlayer(src)
+    plr.Functions.RemoveItem('cocktailglass', 1)
+    plr.Functions.RemoveItem('whiskey', 1)
+    plr.Functions.RemoveItem('cherry', 1)
+    plr.Functions.AddItem('cherrycocktail', 1)
