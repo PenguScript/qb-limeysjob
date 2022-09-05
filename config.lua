@@ -2,6 +2,8 @@ Config = {}
 
 Config.PolyZoneTest = false --SET TO FALSE IF USING ON LIVE SERVER
 
+Config.JobName = "limeys" -- MUST BE A STRING VAR
+
 Config.CandyItems = {
 label = "Limeys Candy",
     slots = 3,
