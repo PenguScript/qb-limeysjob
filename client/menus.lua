@@ -23,56 +23,56 @@ Citizen.CreateThread(function()
 		},
 		distance = 1.5
 	})  
-        exports['qb-target']:AddBoxZone("LimeysTray1", vector3(252.98, -1023.48, 29.68), 0.5, 0.5, {
-			name = "LimeysTray1",
-			heading = 70.0,
-			debugPoly = Config.PolyZoneTest,
-			minZ=29.5,
-			maxZ=29.7,
-		}, {
-			options = {
-			    {
-				event = "qb-limeysjob:Tray1",
-				icon = "fas fa-box",
-				label = "Tray 1",
-			    },
-			},
-			distance = 1.5
-		})
+    exports['qb-target']:AddBoxZone("LimeysTray1", vector3(252.98, -1023.48, 29.68), 0.5, 0.5, {
+		name = "LimeysTray1",
+		heading = 70.0,
+		debugPoly = Config.PolyZoneTest,
+		minZ=29.5,
+		maxZ=29.7,
+	}, {
+		options = {
+		    {
+			event = "qb-limeysjob:Tray1",
+			icon = "fas fa-box",
+			label = "Tray 1",
+		    },
+		},
+		distance = 1.5
+	})
 
-        exports['qb-target']:AddBoxZone("LimeysTray2", vector3(254.0, -1020.8, 29.61), 0.75, 0.35, {
-			name = "LimeysTray2",
-			heading = 160.0,
-			debugPoly = Config.PolyZoneTest,
-			minZ=29.5,
-			maxZ=29.62,
-		}, {
-			options = {
-			    {
-				event = "qb-limeysjob:Tray2",
-				icon = "fas fa-box",
-				label = "Tray 2",
-			    },
-			},
-			distance = 1.5
-		})
+    exports['qb-target']:AddBoxZone("LimeysTray2", vector3(254.0, -1020.8, 29.61), 0.75, 0.35, {
+		name = "LimeysTray2",
+		heading = 160.0,
+		debugPoly = Config.PolyZoneTest,
+		minZ=29.5,
+		maxZ=29.62,
+	}, {
+		options = {
+		    {
+			event = "qb-limeysjob:Tray2",
+			icon = "fas fa-box",
+			label = "Tray 2",
+		    },
+		},
+		distance = 1.5
+	})
 
-        exports['qb-target']:AddBoxZone("LimeysCustomerMenu", vector3(252.90, -1018.45, 29.48), 1.0, 3.25, {
-			name = "LimeysCustomerMenu",
-			heading = 70.0,
-			debugPoly = Config.PolyZoneTest,
-			minZ=31.0,
-			maxZ=32.5,
-		}, {
-			options = {
-                {
-                event = "qb-menu:ViewLimeysMenu",
-                icon = "fas	fa-cocktail",
-                label = "View Menu",
-                },
-			},
-			distance = 20.0
-		})
+    exports['qb-target']:AddBoxZone("LimeysCustomerMenu", vector3(252.90, -1018.45, 29.48), 1.0, 3.25, {
+		name = "LimeysCustomerMenu",
+		heading = 70.0,
+		debugPoly = Config.PolyZoneTest,
+		minZ=31.0,
+		maxZ=32.5,
+	}, {
+		options = {
+            {
+            event = "qb-menu:ViewLimeysMenu",
+            icon = "fas	fa-cocktail",
+            label = "View Menu",
+            },
+		},
+		distance = 20.0
+	})
 
         
 
