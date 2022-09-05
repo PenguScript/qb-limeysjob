@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 			event = "qb-limeysjob:DutyB",
 			icon = "far fa-clipboard",
 			label = "Clock On/Off",
-			job = "limeys",
+			job = Config.JobName,
 		    },
 		},
 		distance = 1.5
@@ -90,7 +90,7 @@ Citizen.CreateThread(function()
 				event = "qb-menu:LimeysDrinkMenu",
 				icon = "fas	fa-cocktail",
 				label = "Drink Menu",
-				job = "limeys",
+				job = Config.JobName,
 			},
 		},
 		distance = 1.5
@@ -110,7 +110,7 @@ Citizen.CreateThread(function()
                         event = "qb-menu:LimeysStorage",
                         icon = "fas fa-box",
                         label = "Storage",
-                        job = "limeys",
+                        job = Config.JobName,
                     },
                 },
                 distance = 1.5
@@ -128,7 +128,7 @@ Citizen.CreateThread(function()
                             event = "qb-limeysjob:Fridge",
                             icon = "fas	fa-cocktail",
                             label = "Drinks Fridge",
-                            job = "limeys",
+                            job = Config.JobName,
                         },
                     },
                     distance = 1.5
@@ -148,7 +148,7 @@ Citizen.CreateThread(function()
                                 event = "qb-menu:LimeysManagerPC",
                                 icon = "fas fa-laptop",
                                 label = "Managers Laptop",
-                                job = "limeys",
+                                job = Config.JobName,
                             },
                         },
                         distance = 1.5
@@ -166,7 +166,7 @@ Citizen.CreateThread(function()
                                     event = "qb-menu:CandyShop",
                                     icon = "fas	fa-bolt",
                                     label = "Candy Shop",
-                                    job = "limeys",
+                                    job = Config.JobName,
                                 },
                             },
                             distance = 1.5
@@ -184,7 +184,7 @@ Citizen.CreateThread(function()
                                         event = "qb-menu:DonutShop",
                                         icon = "fas	fa-cookie",
                                         label = "Donut Shop",
-                                        job = "limeys",
+                                        job = Config.JobName,
                                     },
                                 },
                                 distance = 1.5
@@ -202,7 +202,7 @@ Citizen.CreateThread(function()
 				                event = "qb-limeysjob:LimeysAlarm",
 				                icon = "fas	fa-mask",
 				                label = "Hit Emergency Panic Alarm",
-                                job = "limeys"
+                                job = Config.JobName,
 			                    },
 			                },
 			                distance = 2.5
@@ -222,7 +222,7 @@ Citizen.CreateThread(function()
                         parms = "1",
                         icon = "fas fa-credit-card",
                         label = "Send an Invoice",
-                        job = "limeys",
+                        job = Config.JobName,
                     },
                 },
                 distance = 1.5
