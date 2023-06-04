@@ -1,6 +1,6 @@
 
 
-Discord - https://discord.gg/PkJGQ6EdZp
+Discord - https://dsc.gg/penguscripts
 
 # This is a job for the Limeys MLO
 > (https://www.gta5-mods.com/maps/mlo-limeys-juice-bar-fivem-add-on-sp)
