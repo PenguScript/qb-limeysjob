@@ -43,7 +43,7 @@ Config.OxCandyItems = {
             { name = 'limeyschocolate', price = 1 },
             { name = 'limeyschocolate2', price = 1 },
         },
-    }
+    
 }
 
 --DONUT SHOP
@@ -75,7 +75,7 @@ Config.OxDonutItems = {
             { name = 'limeysdonut', price = 3 },
             { name = 'limeysdonut2', price = 3 },
         },
-    }
+    
 }
 
 
@@ -172,7 +172,7 @@ label = "Limeys Ingredients",
             type = "item",
             slot = 11,
         },
-    }
+    
 }
 
 Config.OxItems = {
