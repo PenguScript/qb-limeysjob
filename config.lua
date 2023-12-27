@@ -172,7 +172,7 @@ label = "Limeys Ingredients",
             type = "item",
             slot = 11,
         },
-    
+    }
 }
 
 Config.OxItems = {
@@ -190,5 +190,5 @@ Config.OxItems = {
             { name = 'watermelon', price = 1 },
             { name = 'whiskey', price = 1 },
         },
-    }
+    
 }
