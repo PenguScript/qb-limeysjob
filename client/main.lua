@@ -483,10 +483,9 @@ end)
 
 RegisterNetEvent("qb-limeysjob:donutshop")
 AddEventHandler("qb-limeysjob:donutshop", function()
-	if Config.Inventory == 'qb' then
+    if Config.Inventory == 'qb' then
         TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeyscandy", Config.DonutItems)
 	elseif Config.Inventory == 'ox' then
 		exports.ox_inventory:openInventory('shop', Config.OxDonutItems)
 	end
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeysdonuts", Config.DonutItems)
 end)
