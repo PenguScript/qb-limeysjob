@@ -4,6 +4,8 @@ Config.PolyZoneTest = false --SET TO FALSE IF USING ON LIVE SERVER
 
 Config.JobName = "limeys" -- MUST BE A STRING VAR
 
+Config.Inventory = 'qb' -- ONLY 'qb' OR 'ox'
+
 Config.CandyItems = {
 label = "Limeys Candy",
     slots = 3,
@@ -34,6 +36,15 @@ label = "Limeys Candy",
         },
     }
 }
+Config.OxCandyItems = {
+    name = 'Limeys Candy',
+        inventory = {
+            { name = 'limeysgum', price = 1 },
+            { name = 'limeyschocolate', price = 1 },
+            { name = 'limeyschocolate2', price = 1 },
+        },
+    }
+}
 
 --DONUT SHOP
 Config.DonutItems = {
@@ -58,6 +69,15 @@ label = "Limeys Donuts",
         },
     }
 }
+Config.OxDonutItems = {
+    name = 'Limeys Ingredients',
+        inventory = {
+            { name = 'limeysdonut', price = 3 },
+            { name = 'limeysdonut2', price = 3 },
+        },
+    }
+}
+
 
 --REGISTER SHOP
 Config.Items = {
@@ -151,6 +171,24 @@ label = "Limeys Ingredients",
             info = {},
             type = "item",
             slot = 11,
+        },
+    }
+}
+
+Config.OxItems = {
+    name = 'Limeys Ingredients',
+        inventory = {
+            { name = 'apple', price = 1 },
+            { name = 'banana', price = 1 },
+            { name = 'cherry', price = 1 },
+            { name = 'cocktailglass', price = 1 },
+            { name = 'drink-glass', price = 1 },
+            { name = 'kiwi', price = 1 },
+            { name = 'lemon', price = 1 },
+            { name = 'lime', price = 1 },
+            { name = 'orange', price = 1 },
+            { name = 'watermelon', price = 1 },
+            { name = 'whiskey', price = 1 },
         },
     }
 }
