@@ -465,15 +465,28 @@ end)
 
 RegisterNetEvent("qb-limeysjob:shop")
 AddEventHandler("qb-limeysjob:shop", function()
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeys", Config.Items)
+	if Config.Inventory == 'qb' then
+        TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeys", Config.Items)
+	elseif Config.Inventory == 'ox' then
+		exports.ox_inventory:openInventory('shop', Config.OxItems)
+	end
 end)
 
 RegisterNetEvent("qb-limeysjob:candyshop")
 AddEventHandler("qb-limeysjob:candyshop", function()
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeyscandy", Config.CandyItems)
+	if Config.Inventory == 'qb' then
+        TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeyscandy", Config.CandyItems)
+	elseif Config.Inventory == 'ox' then
+		exports.ox_inventory:openInventory('shop', Config.OxCandyItems)
+	end
 end)
 
 RegisterNetEvent("qb-limeysjob:donutshop")
 AddEventHandler("qb-limeysjob:donutshop", function()
+	if Config.Inventory == 'qb' then
+        TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeyscandy", Config.DonutItems)
+	elseif Config.Inventory == 'ox' then
+		exports.ox_inventory:openInventory('shop', Config.OxDonutItems)
+	end
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "limeysdonuts", Config.DonutItems)
 end)
