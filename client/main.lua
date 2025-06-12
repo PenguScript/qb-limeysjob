@@ -83,7 +83,7 @@ AddEventHandler("qb-limeysjob:Tray2", function()
         slots = 6,
     })
 		elseif Config.Inventory == 'ox' then
-			exports.ox_inventory:openInventory('stash', {id = 'LimeysTray1', label = "Limeys Tray 1"})
+			exports.ox_inventory:openInventory('stash', {id = 'LimeysTray2', label = "Limeys Tray 2"})
 		end
 end)
 
