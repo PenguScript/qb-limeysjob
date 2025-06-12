@@ -63,20 +63,28 @@ end)
 
 RegisterNetEvent("qb-limeysjob:Tray1")
 AddEventHandler("qb-limeysjob:Tray1", function()
-    TriggerEvent("inventory:client:SetCurrentStash", "LimeysTray1")
-    TriggerServerEvent("inventory:server:OpenInventory", "stash", "LimeysTray1", {
-        maxweight = 10000,
-        slots = 6,
-    })
+	if Config.Inventory == 'qb' then
+			TriggerEvent("inventory:client:SetCurrentStash", "LimeysTray1")
+			TriggerServerEvent("inventory:server:OpenInventory", "stash", "LimeysTray1", {
+		        maxweight = 10000,
+		        slots = 6,
+		    })
+		elseif Config.Inventory == 'ox' then
+			exports.ox_inventory:openInventory('stash', {id = 'LimeysTray1', label = "Limeys Tray 1"})
+		end
 end)
 
 RegisterNetEvent("qb-limeysjob:Tray2")
 AddEventHandler("qb-limeysjob:Tray2", function()
+		if Config.Inventory == 'qb' then
     TriggerEvent("inventory:client:SetCurrentStash", "LimeysTray2")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "LimeysTray2", {
         maxweight = 10000,
         slots = 6,
     })
+		elseif Config.Inventory == 'ox' then
+			exports.ox_inventory:openInventory('stash', {id = 'LimeysTray1', label = "Limeys Tray 1"})
+		end
 end)
 
 RegisterNetEvent("qb-limeysjob:Cabinet1")
